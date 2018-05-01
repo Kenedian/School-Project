@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Freelancer web developer, Javascript, HTML5, CSS3.."/>
+    <meta name="keywords" content="HTML5, CSS3, JAVASCRIPT, FREELANCER, WEB DEVELOPER"/>
+    <meta name="author" content="Jan Jakeš 2.D"/>
+    <meta name="copyright" content="Jan Jakeš"/>
+    <title>Lite&amp;Light Websites</title>
+
+    <link rel="icon" href="assets/img/ico.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Budoucí vyskakovací okno ohledně chyb, zpráv -->
+    <div class="msg-background">
+      <div class="msg-frame">
+        <span class="msg-close">X</span>
+        <h3 class="msg-hd">Error Heading</h3>
+        <p class="msg-text">Error Text</p>
+      </div>
+    </div>
+
+    <!-- Skrytý formulář pro registraci a přihlášení -->
+    <div id="loginregister" class="hide">
+        <div id="log-form">
+            <button class="btn btn-danger" type="button" id="closebtn">Close</button>
+            <div class="form-group"><label for="username">Username</label><input type="text" name="username"></div>
+            <div class="form-group"><label for="email">Email</label><input type="email" name="email"></div>
+            <div class="form-group"><label for="password">Password</label><input type="password" name="password"></div>
+            <button class="btn btn-primary" type="button" id="loginbtn">Login</button>
+            <button class="btn btn-primary" type="button" id="registerbtn">Register</button>
+        </div>
+    </div>
+    <!-- Navigace -->
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button fixed-top">
+            <div class="container">
+                <a class="navbar-brand  animated fadeIn" href="#home">
+                <i class="typcn typcn-lightbulb"></i>
+                    Lite&amp;Light Websites
+                </a>
+                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation
+                    </span><span class="navbar-toggler-icon"></span>
+                    </button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#about">about</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contactus">Contact Us</a></li>
+                    </ul><span class="navbar-text actions"> <a href="#" id="logged" class="logged-no" data-toggle="tooltip" data-placement="bottom" title="Log Out!">Logged in as <strong>Kenedian</strong></a><a href="#" class="login">Log In</a><a class="register btn btn-light action-button" role="button" href="#">Sign Up</a></span>
+                </div>
+    </div>
+    </nav>
+    </div>
+    <!-- Pseudoheader -->
+    <div id="promo">
+        <div class="jumbotron">
+            <h1>I am a Freelancer</h1>
+            <p>Creating. Developing. Designing</p>
+            <p>I love working at new designs and creating modern technology! Doing front-end as well as back-end using widest frameworks and most used tools to deliver the website as fast as possible.</p>
+            <p><a class="btn btn-primary" role="button" href="#about">Learn more</a></p>
+        </div>
+    </div>
+    <!-- O mě -->
+    <h2 id="about">About Me</h2>
+    <div class="container">
+        <div class="row" id="icons">
+            <div class="col-lg-4 animated slideInLeft">
+                <i class="fa fa-html5 icons"></i>
+                <h3>HTML5</h3>
+                <p>Using all the marks from HTML5</p>
+            </div>
+            <div class="col-lg-4 animated slideInUp">
+                <i class="fa fa-css3 icons"></i>
+                <h3>CSS3</h3>
+                <p>Fully Responsive via BootStrap 4</p>
+            </div>
+            <div class="col-lg-4 animated slideInRight">
+                <i class="icon ion-social-javascript"></i>
+                <h3>JavaScript</h3>
+                <p>Developing at the highest-level</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div id="photo"></div>
+            </div>
+            <div class="col-lg-8" id="aboutme">
+                <h2>Honza Jakeš</h2>
+                <p>My name is Honza Jakeš. I'm From Czech Republic and I live in Prague. I study Computer Science for two years today. I'm currently on <strong>Smíchovkská Střední Průmyslová Škola</strong>. I am learning on my own about computer science, but mostly about programming and web developing. My main goal is to become good back-end developer regradless on job.&nbsp;</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 order-lg-1 order-2">
+                <hr>
+                <h2>Front-end Developer</h2>
+                <p>This is a template for my upcoming collegue, who is going to work as a front-end developer and do most of the design</p>
+            </div>
+            <div class="col-lg-4 order-lg-2 order-1">
+                <div id="photoCollegue"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Galerie -->
+    <h2 id="gallery">Gallery</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"><a href="assets/img/temp1.jpg" data-lightbox="template"><img src="assets/img/temp1.jpg" alt="website image" class="img-thumbnail" data-lightbox=""></a></div>
+            <div class="col-lg-4"><a href="assets/img/temp6.jpg" data-lightbox="template"><img src="assets/img/temp6.jpg" alt="website image" class="img-thumbnail"></a></div>
+            <div class="col-lg-4"><a href="assets/img/temp4.png" data-lightbox="template"><img src="assets/img/temp4.png" alt="website image" class="img-thumbnail"></a></div>
+            <div class="col-lg-4"><a href="assets/img/temp5.jpg" data-lightbox="template"><img src="assets/img/temp5.jpg" alt="website image" class="img-thumbnail"></a></div>
+            <div class="col-lg-4"><a href="assets/img/temp2jpg" data-lightbox="template"><img src="assets/img/temp2.jpg" alt="website image" class="img-thumbnail"></a></div>
+            <div class="col-lg-4"><a href="assets/img/temp3.jpg" data-lightbox="template"><img src="assets/img/temp3.jpg" alt="website image" class="img-thumbnail"></a></div>
+        </div>
+    </div>
+    <!-- Kontakt -->
+    <h2 id="contactus">Contact Us</h2>
+    <div class="row container" id="form">
+        <div class="col">
+            <form class="td-form-wrapper">
+                <div class="form-group">
+                    <div class="col-md-12"><label for="name">Your Name *</label>
+                        <div class="d-flex"><input class="form-control d-flex" type="text" name="name" required="" placeholder="Your Name" autocomplete="off"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12"><label for="email">Email Address *</label>
+                        <div class="d-flex"><input class="form-control" type="text" name="email" required="" placeholder="john.doe@example.com" autocomplete="off"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12"><label for="phone">Phone (optional)</label>
+                        <div class="d-flex td-input-container"><input class="form-control" type="text" name="phone" autocomplete="off" placeholder="555-555-1212"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12"><label for="subject">Subject * </label>
+                        <div class="d-flex td-input-container"><input class="form-control" type="text" name="subject" required="" autocomplete="off" placeholder="I really like this form, thanks!"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12"><label for="message">Message Details *</label>
+                        <div class="d-flex td-input-container"><textarea class="form-control" rows="6" cols="50" name="message" placeholder="Add meaningful message here"></textarea></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12"><button class="btn btn-dark float-right" type="submit">Send us your message!</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h3><i class="typcn typcn-lightbulb"></i><a href="#home">Lite&amp;Light Websites</a></h3>
+                <p class="links"><a href="#home">Home</a><strong> · </strong><a href="#about">About</a><strong> · </strong><a href="#gallery">Gallery</a><strong> · </strong><a href="#contactus">Contact</a><a href="#"></a></p>
+                <p class="company-name">Lite&amp;Light © 2018</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                    <p><span class="new-line-span">Preslova 25</span> Praha 5 - Smíchov</p>
+                </div>
+                <div><i class="fa fa-phone footer-contacts-icon"></i>
+                    <p class="footer-center-info email text-left"> +420 777 123 456</p>
+                </div>
+                <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                    <p> <a href="mailto:myemail@mail.com" target="_blank">myemail@mail.com</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-4 footer-about">
+                <h4>Company Social Media</h4>
+                <p>This is our social medias, you can see our latest work and updates here!</p>
+                <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripty -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/smoothScroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,513 @@
+body {
+  background:#dfdfdf;
+  padding-top:50px;
+}
+
+.btn.btn-light.action-button.reg-logged {
+  display:none;
+}
+
+.logged-no {
+  display:none;
+}
+
+.login.log-logged {
+  display:none;
+}
+
+#promo {
+  text-align:center;
+  padding:80px;
+  background:url("../../assets/img/mac-wallpaper.jpg") no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:50% 50%;
+  max-height: 100%;
+}
+
+#promo .jumbotron {
+  position:relative;
+  border-radius:10px;
+  background-color:rgba(255,255,255,0.75);
+  max-width:800px;
+  padding:30px;
+  min-width:200px;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+
+
+@media screen and (max-width:400px) {
+   #promo h1 {
+    font-size:25px;
+  }
+
+  #promo p {
+    font-size:12px;
+  }
+
+  #closebtn{
+   font-size:0.5em;
+   padding:2px;
+  }
+}
+
+.typcn.typcn-lightbulb {
+  font-size:20px;
+}
+
+.typcn.typcn-lightbulb, .icon.ion-social-javascript, .fa {
+  color:#16456b;
+}
+
+.icon.ion-social-javascript {
+  font-size:140px;
+}
+
+#navcol-1 {
+  padding-top:5px;
+  font-size:12px;
+}
+
+.icons {
+  font-size:15em;
+}
+
+#icons {
+  text-align:center;
+}
+
+h2 {
+  text-align:center;
+  font-size:2.8em;
+  padding:10px;
+}
+
+#photo, #photoCollegue {
+  content:"";
+  width:300px;
+  height:300px;
+  border-radius:100%;
+  border:5px solid #16456b;
+  background:url("../../assets/img/myPhoto.jpg") no-repeat;
+  background-size:cover;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+#photoCollegue {
+  background:url("../../assets/img/colleguePhoto.png") no-repeat;
+  background-size:cover;
+}
+
+#aboutme p {
+  text-align:center;
+  font-size:1.2em;
+}
+
+.row {
+  margin-bottom:80px;
+}
+
+.row:last-of-type {
+  margin-bottom:10px;
+}
+
+.col-lg-4 img {
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  margin:5px;
+}
+
+#form {
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+#loginregister {
+  position:fixed;
+  opacity:0.95;
+  width:100%;
+  height:100%;
+  background:#5383d3;
+  z-index:1031;
+  left:0px;
+  top:0px;
+}
+
+#log-form {
+  width:50%;
+  height:300px;
+  opacity:1;
+  position:absolute;
+  top:50%;
+  left:50%;
+  z-index:1032;
+  transform:translate(-50%,-50%);
+}
+
+#log-form input {
+  width:100%;
+  border-radius:5px;
+}
+
+#loginregister label {
+  margin-top:10px;
+  font-size:1.2em;
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  color:#eeeeee;
+  font-weight:600;
+}
+
+#registerbtn {
+  margin:1px;
+  float:left;
+}
+
+#loginbtn, #closebtn {
+  margin:1px;
+  float:right;
+}
+
+
+.hide{
+  visibility:hidden;
+  opacity: 0;
+}
+
+
+.msg-background{
+  visibility:hidden;
+  opacity:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+  position:fixed;
+  z-index:9999;
+  transition:visibility 0.5s ease, opacity 0.5s ease;
+}
+.msg-frame{
+  position:fixed;
+  top:50%;
+  left:50%;
+  background:rgb(100,100,100);
+  border:8px solid rgb(120,120,120);
+  transform:translate(-50%,-50%);
+  border-radius:30px;
+  width:500px;
+  height:500px;
+  box-shadow: 5px 5px 5px 5px #555;
+}
+.msg-close{
+  position:relative;
+  font-size:2em;
+  top:10px;
+  left: calc(100% - 40px);
+  cursor:pointer;
+  color:rgba(20,20,20,0.5);
+  transition:color 0.1s ease;
+}
+.msg-close:hover{
+  color:rgba(20,20,20,0.8);
+}
+.msg-hd{
+  text-align:center;
+  font-size:1.8em;
+  color:white;
+}
+.msg-text{
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(0,0,0,0.4);
+  width:90%;
+  height:65%;
+  text-align:left;
+  box-shadow: -5px -5px 5px 5px inset #222;
+  padding:25px;
+  color:white;
+}
+
+.msg-frame.success{
+  background:rgb(0,200,0);
+  border:8px solid rgb(0,180,0);
+  box-shadow: 5px 5px 5px 5px rgb(0,150,0);
+}
+.msg-frame.success .msg-text{
+  box-shadow: -5px -5px 5px 5px inset rgb(0,100,0);
+}
+
+.msg-frame.error{
+  background:rgb(200,0,0);
+  border:8px solid rgb(180,0,0);
+  box-shadow: 5px 5px 5px 5px rgb(150,0,0);
+}
+.msg-frame.error .msg-text{
+  box-shadow: -5px -5px 5px 5px inset rgb(100,0,0);
+}
+
+@media screen and (max-width:525px){
+    .msg-frame{
+      width:100%;
+      border-radius:0px;
+    }
+
+    .msg-close{
+      right:0px;
+      left:50%;
+      transform:translateX(-50%);
+    }
+    @media screen and (max-width:390px){
+    form ul li label{
+      font-size:0.8em;
+    }
+
+    .msg-hd{
+      font-size:1.8em;
+    }
+
+    .msg-text{
+      font-size:1em;
+    }
+  }
+}
+
+/* CSS pro footer
+*/
+footer {
+  background-color:#292c2f;
+  box-shadow:0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing:border-box;
+  width:100%;
+  text-align:left;
+  font:bold 16px sans-serif;
+  padding:55px 50px;
+  margin-top:80px;
+  bottom:0;
+  color:#fff;
+}
+
+.footer-navigation h3 {
+  margin:0;
+  font:normal 36px Cookie, cursive;
+  margin-bottom:20px;
+  color:#fff;
+}
+
+.footer-navigation h3 a {
+  text-decoration:none;
+  color:#fff;
+}
+
+.footer-navigation h3 span {
+  color:#5383d3;
+}
+
+.footer-navigation p.links a {
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-navigation p.company-name {
+  color:#8f9296;
+  font-size:14px;
+  font-weight:normal;
+  margin-top:20px;
+}
+
+@media (max-width:767px) {
+  .footer-contacts {
+    margin:30px 0;
+  }
+}
+
+.footer-contacts p {
+  display:inline-block;
+  color:#ffffff;
+  vertical-align:middle;
+}
+
+.footer-contacts p a {
+  color:#5383d3;
+  text-decoration:none;
+}
+
+.fa.footer-contacts-icon {
+  background-color:#33383b;
+  color:#fff;
+  font-size:18px;
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  text-align:center;
+  line-height:38px;
+  margin:10px 15px 10px 0;
+}
+
+span.new-line-span {
+  display:block;
+  font-weight:normal;
+  display:block;
+  font-weight:normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-about h4 {
+  display:block;
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:20px;
+}
+
+.footer-about p {
+  line-height:20px;
+  color:#92999f;
+  font-size:13px;
+  font-weight:normal;
+  margin:0;
+}
+
+div.social-links {
+  margin-top:20px;
+  color:#fff;
+}
+
+.social-links a {
+  display:inline-block;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+  background-color:#33383b;
+  border-radius:2px;
+  font-size:20px;
+  color:#ffffff;
+  text-align:center;
+  line-height:35px;
+  margin-right:5px;
+  margin-bottom:5px;
+}
+
+/* CSS Pro navigaci
+*/
+
+.navigation-clean-button {
+  background:#fff;
+  padding-top:.75rem;
+  padding-bottom:.75rem;
+  color:#333;
+  border-radius:0;
+  box-shadow:none;
+  border:none;
+  margin-bottom:0;
+}
+
+@media (min-width:768px) {
+  .navigation-clean-button {
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+}
+
+.navigation-clean-button .navbar-brand {
+  font-weight:bold;
+  color:inherit;
+  font-size:1.4em;
+}
+
+.navigation-clean-button .navbar-brand:hover {
+  color:#222;
+}
+
+.navigation-clean-button .navbar-toggler {
+  border-color:#ddd;
+}
+
+.navigation-clean-button .navbar-toggler:hover, .navigation-clean-button .navbar-toggler:focus {
+  background:none;
+}
+
+.navigation-clean-button .navbar-toggler {
+  color:#888;
+}
+
+.navigation-clean-button .navbar-collapse, .navigation-clean-button .form-inline {
+  border-top-color:#ddd;
+}
+
+.navigation-clean-button .navbar-nav a.active, .navigation-clean-button .navbar-nav > .show > a {
+  background:none;
+  box-shadow:none;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav a.active, .navigation-clean-button.navbar-light .navbar-nav a.active:focus, .navigation-clean-button.navbar-light .navbar-nav a.active:hover {
+  color:#8f8f8f;
+  box-shadow:none;
+  background:none;
+  pointer-events:none;
+}
+
+.navigation-clean-button.navbar .navbar-nav .nav-link {
+  padding-left:18px;
+  padding-right:18px;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link {
+  color:#2b4358;
+  font-size:0.9em;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link:focus, .navigation-clean-button.navbar-light .navbar-nav .nav-link:hover {
+  color:#37434d !important;
+  background-color:transparent;
+}
+
+.navigation-clean-button .navbar-nav > li > .dropdown-menu {
+  margin-top:-5px;
+  box-shadow:0 4px 8px rgba(0,0,0,.1);
+  background-color:#fff;
+  border-radius:2px;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus, .navigation-clean-button .dropdown-menu .dropdown-item {
+  line-height:2;
+  font-size:14px;
+  color:#37434d;
+}
+
+.navigation-clean-button .dropdown-menu .dropdown-item:focus, .navigation-clean-button .dropdown-menu .dropdown-item:hover {
+  background:#eee;
+  color:inherit;
+}
+
+.navigation-clean-button .actions .login {
+  margin-right:1rem;
+  text-decoration:none;
+  color:#465765;
+}
+
+.navigation-clean-button .navbar-text .action-button, .navigation-clean-button .navbar-text .action-button:active, .navigation-clean-button .navbar-text .action-button:hover {
+  background:#56c6c6;
+  border-radius:20px;
+  font-size:inherit;
+  color:#fff;
+  box-shadow:none;
+  border:none;
+  text-shadow:none;
+  padding:.5rem 1rem;
+  transition:background-color 0.25s;
+  font-size:inherit;
+}
+
+.navigation-clean-button .navbar-text .action-button:hover {
+  background:#66d7d7;
+}
+
